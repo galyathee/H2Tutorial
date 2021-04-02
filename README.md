@@ -1,10 +1,29 @@
 # H2Tutorial
-Basic operations on [H2](http://h2database.com/html/main.html) Database in Java
+Basic operations on [H2](http://h2database.com/html/main.html) database in Java
 
-H2 DB is a quite simple DB to incorporate into projects. It is written in Java, and it can be started from Java.
+# Technologies
+- Java
+- H2 1v.4.200
 
-The current project shows the class `org.galyathee.h2.H2Demo` doing the following
-- Loading H2 JDBC driver
+# Notes
+That demo uses the following Maven configuration:
+```
+<dependency>
+  <groupId>com.h2database</groupId>
+  <artifactId>h2</artifactId>
+  <version>1.4.200</version>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>com.h2database</groupId>
+  <artifactId>h2</artifactId>
+  <version>1.4.200</version>
+  <scope>compile</scope>
+</dependency>
+```
+
+The demo class `org.galyathee.h2.H2Demo` does the following
+- Load H2 JDBC driver
 - Create a new DB
 - Create / Drop a table
 - CRUD operations on records
